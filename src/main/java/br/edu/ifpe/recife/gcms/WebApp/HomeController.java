@@ -12,5 +12,8 @@ return "Hello, World";
 public @ResponseBody String greetingFulano() {
 return "Hello, Luciano!";
 }
-
+@RequestMapping("/Alteração responsavel")
+public @ResponseBody String greetingFulano() {
+return "Hello, Alteração responsavel!";
+}
 }
