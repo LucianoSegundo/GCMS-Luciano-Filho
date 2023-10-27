@@ -9,11 +9,7 @@ public @ResponseBody String greeting() {
 return "Hello, World";
 }
 @RequestMapping("/Luciano")
-<<<<<<< HEAD
-public @ResponseBody String greetingDeuclano() {
-=======
 public @ResponseBody String greetingLuciano() {
->>>>>>> hotfix
 return "Hello, Luciano!";
 }
 @RequestMapping("/Alteração responsavel")
