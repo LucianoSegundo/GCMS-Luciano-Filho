@@ -33,4 +33,11 @@ class WebAppApplicationTests {
 		this.mockMvc.perform(get("/Alteração responsavel")).andDo(print()).andExpect(status().isOk())
 				.andExpect(content().string(containsString("Hello, Alteração responsavel")));
 	}
+	@Test
+	public void shouldReturnDefaultMessage2() throws Exception {
+		this.mockMvc.perform(get("/começo responsavel")).andDo(print()).andExpect(status().isOk())
+				.andExpect(content().string(containsString("Hello,  começo responsavel!")));
+	}
+	
+	
 }
