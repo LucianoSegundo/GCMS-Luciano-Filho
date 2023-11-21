@@ -16,8 +16,12 @@ return "Hello, Luciano!";
 public @ResponseBody String greetingAlteração() {
 return "Hello, Alteração responsavel!";
 }
-@RequestMapping("/começo responsavel")
+@RequestMapping("/começo responsavelmente responsavel")
 public @ResponseBody String greetingcomeço() {
-return "Hello,  começo responsavel!";
+return "Hello,  começo responsavelmente responsavel!";
+}
+@RequestMapping("/Alteração iresponsavel")
+public @ResponseBody String greetingAlteração() {
+return "Hello, Alteração iresponsavel!";
 }
 }
