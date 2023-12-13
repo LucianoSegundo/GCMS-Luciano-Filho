@@ -12,5 +12,9 @@ return "Hello, World";
 public @ResponseBody String greetingLuciano() {
 return "Hello, Luciano!";
 }
+@RequestMapping("/NãoLuciano")
+public @ResponseBody String greetingNãoLuciano() {
+return "Hello, Não sou Luciano!";
+}
 
 }
