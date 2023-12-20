@@ -25,14 +25,14 @@ class WebAppApplicationTests {
 
 	@Test
 	public void shouldReturnDefaultMessage2() throws Exception {
-		this.mockMvc.perform(get("/Luciano1")).andDo(print()).andExpect(status().isOk())
-				.andExpect(content().string(containsString("Hello, Luciano1")));
+		this.mockMvc.perform(get("/Luciano")).andDo(print()).andExpect(status().isOk())
+				.andExpect(content().string(containsString("Hello, Luciano")));
 	}
 	
 	// literalmente esqueci de quebrar o codigo antes de concertar o codigo
 	@Test
 	public void shouldReturnDefaultMessage3() throws Exception {
-		this.mockMvc.perform(get("/NãoLuciano")).andDo(print()).andExpect(status().isOk())
+		this.mockMvc.perform(get("/Luciano")).andDo(print()).andExpect(status().isOk())
 				.andExpect(content().string(containsString("Hello, Não sou Luciano!")));
 	}
 	
