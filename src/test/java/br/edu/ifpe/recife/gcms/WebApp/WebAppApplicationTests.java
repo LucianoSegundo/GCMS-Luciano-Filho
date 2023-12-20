@@ -26,7 +26,7 @@ class WebAppApplicationTests {
 	@Test
 	public void shouldReturnDefaultMessage2() throws Exception {
 		this.mockMvc.perform(get("/Luciano")).andDo(print()).andExpect(status().isOk())
-				.andExpect(content().string(containsString("Hello, Luciano")));
+				.andExpect(content().string(containsString("Hello, Luciano1")));
 	}
 	
 	// literalmente esqueci de quebrar o codigo antes de concertar o codigo
